@@ -10,6 +10,5 @@ class minidlna::configure {
     group   => 'minidlna',
     mode    => '0644',
     content => template('minidlna/minidlna.conf'),
-    notify  => Service['minidlna'],
   }
 }
